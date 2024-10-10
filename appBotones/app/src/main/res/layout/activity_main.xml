@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Button"
+        app:icon="@drawable/ic_bluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tgbApagado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="32dp"
+        android:text="ToggleButton"
+        android:textOff="APAGADO"
+        android:textOn="ENCENDIDO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imbReiniciar" />
+
+    <TextView
+        android:id="@+id/txtSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/txtApagado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtApagado" />
+
+    <ImageButton
+        android:id="@+id/imbReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/btnBluetooth"
+        app:layout_constraintTop_toBottomOf="@+id/btnBluetooth"
+        app:srcCompat="@drawable/ic_reiniciar" />
+
+    <TextView
+        android:id="@+id/txtApagado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tgbApagado"
+        app:layout_constraintStart_toStartOf="@+id/imbReiniciar" />
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="363dp"
+        android:layout_marginBottom="41dp"
+        android:text="Estado de la conexión"
+        app:layout_constraintBottom_toTopOf="@+id/opcion1"
+        app:layout_constraintEnd_toEndOf="@+id/tgbApagado"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/tgbApagado"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/opcion1"
+        android:layout_width="131dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="44dp"
+        android:text="Opción 1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <CheckBox
+        android:id="@+id/opcion2"
+        android:layout_width="131dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="44dp"
+        android:text="Opción 2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <CheckBox
+        android:id="@+id/opcion3"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:text="Opción 3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="522dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
